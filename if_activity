@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         
-        boolean isLightGreen = false;
+        boolean isLightGreen = true;
         
         if (isLightGreen) {
             System.out.println("Drive");
+        } else {
+            System.out.println("Stop!");
         }
     }
 }
