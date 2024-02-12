@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ProgressaoAritmeticaWhile {
+public class MelhoriaExercicio061 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,24 +14,33 @@ public class ProgressaoAritmeticaWhile {
         int razao = scanner.nextInt();
 
         // Exibe mensagem inicial
-        System.out.println("Os 10 primeiros termos da PA são:");
+        System.out.println("Os termos da PA são:");
 
-        // Inicializa o contador
         int i = 0;
+        int quantidadeTermos;
 
-        // Usa a estrutura while para calcular e exibir os 10 primeiros termos da PA
-        while (i < 10) {
-            // Cálculo do termo usando a fórmula da PA
-            int termo = primeiroTermo + i * razao;
+        do {
+            // Solicita ao usuário a quantidade de termos desejada
+            System.out.print("Quantos termos você deseja mostrar? (Digite 0 para encerrar): ");
+            quantidadeTermos = scanner.nextInt();
 
-            // Exibe o termo atual na sequência
-            System.out.print(termo + " ");
+            // Exibe os termos da PA de acordo com a quantidade informada
+            while (i < quantidadeTermos) {
+                int termo = primeiroTermo + i * razao;
+                System.out.print(termo + " ");
+                i++;
+            }
 
-            // Incrementa o contador
-            i++;
-        }
+            // Reinicia o contador para a próxima iteração
+            i = 0;
+
+            // Pula uma linha para melhorar a legibilidade
+            System.out.println();
+
+        } while (quantidadeTermos != 0);
 
         // Fecha o scanner para evitar vazamentos de recursos
         scanner.close();
     }
 }
+
