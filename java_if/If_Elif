@@ -1,4 +1,4 @@
-public class IfElif {
+public class If_Elif {
     public static void main(String[] args) {
 
         boolean isLightGreen = true;
