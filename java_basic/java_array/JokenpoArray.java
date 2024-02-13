@@ -9,7 +9,6 @@ public class Jokenpo {
 
         // Exibe as opções para o usuário
         System.out.println("Bem-vindo ao JOKENPÔ!\nEscolha: 1 - Pedra, 2 - Papel, 3 - Tesoura");
-        // Obtém a escolha do usuário
         int escolhaUsuario = scanner.nextInt();
 
         // Verifica se a escolha do usuário é válida
