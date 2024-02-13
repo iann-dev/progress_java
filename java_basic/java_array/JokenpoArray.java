@@ -19,11 +19,11 @@ public class Jokenpo {
             System.out.printf("Você escolheu: %s\nO computador escolheu: %s\n",
                     escolhaUsuarioString, escolhaComputadorString);
 
-            int diferenca = (escolhaUsuario - random.nextInt(3) + 2) % 3;
+            int diferenca = (escolhaUsuario - random.nextInt(3) + 3) % 3;
 
-            System.out.println(diferenca == 0 ? "Empate!" : 
-                               (diferenca == 1 || diferenca == 2) ? "Você venceu!" :
-                               "Você perdeu!");
+            System.out.println(diferenca == 0 ? "Empate!" :
+                               (diferenca == 1) ? "Você perdeu!" :
+                               "Você venceu!");
         }
 
         scanner.close();
